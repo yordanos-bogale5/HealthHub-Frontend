@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #073362;
+  
+  
+  }
+  
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 50vh;
+    padding: 1rem;
+    background-image: url("https://www.alpha-hardin.com/wp-content/uploads/2022/08/shutterstock_718097074.jpg");
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(10px); /* Adds the blur effect */
+    background-color: rgba(255, 255, 255, 0.1); /* Adds a slight white tint */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Adds a border to enhance the glass effect */
+    box-shadow: 0 4px 6px rgba(95, 82, 82, 0.1); /* Adds a subtle shadow */
+  }
+  
+  
+  .form-container {
+  
+    position: relative;
+    padding: 2rem 1rem 0.5rem 1.5rem;
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 15px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 10px 2px ;
+    background: transparent;
+    color: black;  
+  }
+  
+  h1 {
+    text-align: center;
+    color: #073362;
+    font-size: clamp(1.rem, 2vw, 1rem);
+    margin-bottom: 2rem;
+  }
+  
+  .step {
+    margin-bottom: 1rem;
+  
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #073362;
+    font-size: 13px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 0.3rem;
+    border: 2px solid #c0c0c0;
+    border-radius: 30px;
+    outline: none;
+    background: transparent;
+    color: black;
+    font-size: 1rem;
+  }
+  
+  select :hover{
+    color: black;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  input[type="submit"],
+  button {
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 20px;
+    background: #c0c0c0;
+    font-size: clamp(0.9rem, 2.6vw, 1.3rem);
+    font-weight: 450;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  input[type="submit"]:hover,
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .submit-container {
+    margin-top: 1rem;
+  }
+  
+  .appointment-image {
+    margin-left: 2rem;
+  }
+  
+  .appointment-image img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  

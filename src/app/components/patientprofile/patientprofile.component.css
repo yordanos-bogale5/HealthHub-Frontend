@@ -1,0 +1,190 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    font-family: "Inter", sans-serif;
+}
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    font-family: "Inter", sans-serif;
+    
+}
+
+.body{
+    font-size:20%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3%;
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    z-index: 1000;
+    background-color: white !important;
+
+}
+.logo{
+    width: 150px;
+}
+.logo img{
+    width: 100%;
+}
+.navbar a{
+    color:#4A5764 ;
+    font-size: 1.2rem;
+    margin: 1rem;
+    position: relative;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    color:#2ec8a6 ;
+}
+
+.navbar a::after{
+    content: "";
+    background-color:#2ec8a6 ;
+    width: 0;
+    position: absolute;
+    height: 0.2rem;
+    left: 0;
+    margin-top: 0.5rem;
+    top: 100%;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+
+#menu-bars{
+    color: #4A5764;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    display: none;
+}
+#menu-bars:hover{
+    color: #2ec8a6;
+}
+.right-icons a{
+
+    padding: 1.1rem 1.5rem;
+    font-size: 1.0rem;
+    background:white;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.right-icons i{
+    font-size: 38px;
+    color: black;
+}
+.right-icons i:hover{
+    color: #2ec8a6;
+    font: 28px;
+    transition: .3s;
+}
+.main{
+    background-image: url("https://www.alpha-hardin.com/wp-content/uploads/2022/08/shutterstock_718097074.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container{
+    position: relative;
+    padding: 2rem 1rem 0.5rem 1.5rem;
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 15px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 10px 2px ;
+    background: transparent;
+    color: black; 
+    width: 30%;
+    justify-content:center ;
+    align-items: center;
+    margin-left: 32%;
+    padding-top: 3%;
+    margin-top: 4%;
+}
+.profileform img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.profileform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.profileform .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.profileform .input-box input,
+.profileform .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline:none;
+    resize: none;
+}
+.profileform .input-box span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.profileform .input-box input:focus ~ span,
+.profileform .input-box input:valid ~ span,
+.profileform .input-box textarea:focus ~ span,
+.profileform .input-box textarea:focus ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.profileform .input-box input[type="submit"]{
+    width: 100px;
+    background:#2ec8a6;
+    color: #172317;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.profileform .input-box input[type="submit"]:hover{
+    color: #2ec8a6;
+    background-color: #fff;
+    border: 2px solid #2ec8a6;
+}

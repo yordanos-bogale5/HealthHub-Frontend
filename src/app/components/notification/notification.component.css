@@ -1,0 +1,22 @@
+.notification {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat {
+    background-color: #f1f1f1;
+  }
+  
+  .comment {
+    background-color: #e0f7fa;
+  }
+  
+  .payment {
+    background-color: #fff3e0;
+  }
+  
+  .reminder {
+    background-color: #e8f5e9;
+  }

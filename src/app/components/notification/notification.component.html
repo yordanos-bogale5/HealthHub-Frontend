@@ -1,0 +1,4 @@
+<div *ngFor="let notification of notifications" [ngClass]="notification.type">
+    <p>{{ notification.message }}</p>
+    <span>{{ notification.timestamp | date:'short' }}</span>
+  </div>
