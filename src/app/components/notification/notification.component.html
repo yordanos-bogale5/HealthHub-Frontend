@@ -1,0 +1,28 @@
+<div class="container">
+  <header>
+    <div class="notif_box">
+      <h2 class="title">Notifications</h2>
+      <span id="notifes">{{ unreadMessagesCount }}</span>
+    </div>
+    <p id="mark_all" (click)="markAllAsRead()">Mark all as read</p>
+  </header>
+  <main>
+    <div *ngIf="isLoading" class="loading-spinner"></div>
+    <div *ngIf="!isLoading">
+      <div *ngFor="let message of messages" [ngClass]="{'notif_card': true, 'unread': message.unread}" (click)="markAsRead(message)">
+        <img [src]="message.avatar" alt="avatar" />
+        <div class="description">
+          <p class="user_activity">
+            <strong>{{ message.user }}</strong> {{ message.activity }}
+            <b *ngIf="message.post">{{ message.post }}</b>
+          </p>
+          <p class="time">{{ message.time }}</p>
+        </div>
+        <div *ngIf="message.message" class="message">
+          <p>{{ message.message }}</p>
+        </div>
+        <img *ngIf="message.image" [src]="message.image" class="chess_img" alt="chess" />
+      </div>
+    </div>
+  </main>
+</div>

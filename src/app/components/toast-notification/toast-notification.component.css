@@ -1,0 +1,23 @@
+.toast-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.toast {
+  background-color: var(--Blue);
+  color: var(--White);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 550px) {
+  .container {
+    margin: 0;
+    width: 100%;
+  }
+}
+

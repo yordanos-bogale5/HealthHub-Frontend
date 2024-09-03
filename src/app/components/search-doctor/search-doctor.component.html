@@ -1,0 +1,21 @@
+<div class="search-container">
+  <form [formGroup]="searchForm" (ngSubmit)="onSearch()">
+    <input formControlName="name" placeholder="Name">
+    <select formControlName="gender">
+      <option value="">Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    <select formControlName="specialty">
+      <option value="">Specialty</option>
+      <option *ngFor="let specialty of specialties" [value]="specialty">{{ specialty }}</option>
+    </select>
+    <button type="submit">Search</button>
+  </form>
+  <div class="specialty-list">
+    <h2>Specialties</h2>
+    <select>
+      <option *ngFor="let specialty of specialties">{{ specialty }}</option>
+    </select>
+  </div>
+</div>
